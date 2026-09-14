@@ -10,13 +10,13 @@ This is a schema describing microfluidic flow test videos of microfluidic flow d
 | `flow_device_name` | string | Name of the flow device used, corresponds to `flow_device_name` value in `flow_device` schema. |
 | `observation` | string | Free-text notes on what was observed during the run. |
 | `fluid_1_name` | string | Name/description of the fluid run through channel 1, or `na` if that channel was not used in this run. |
-| `fluid_1_rate_value` | int | Flow rate for `fluid_1_name`. `0` if the channel exists on the device but no fluid was flowed through it in this run; `na` only when `fluid_1_name` is also `na`. |
+| `fluid_1_rate_value` | float | Flow rate for `fluid_1_name`. `0` if the channel exists on the device but no fluid was flowed through it in this run; `na` only when `fluid_1_name` is also `na`. |
 | `fluid_1_rate_unit` | string | Flow rate unit for `fluid_1_rate_value`. Must be a term in the QUDT Unit ontology or `na` if `fluid_1_name` is `na`. |
 | `fluid_2_name` | string | Same as `fluid_1_name`, for channel 2. |
-| `fluid_2_rate_value` | int | Same as `fluid_1_rate_value`, for channel 2. |
+| `fluid_2_rate_value` | float | Same as `fluid_1_rate_value`, for channel 2. |
 | `fluid_2_rate_unit` | string | Same as `fluid_1_rate_unit`, for channel 2. |
 | `fluid_3_name` | string | Same as `fluid_1_name`, for channel 3. |
-| `fluid_3_rate_value` | int | Same as `fluid_1_rate_value`, for channel 3. |
+| `fluid_3_rate_value` | float | Same as `fluid_1_rate_value`, for channel 3. |
 | `fluid_3_rate_unit` | string | Same as `fluid_1_rate_unit`, for channel 3. |
 
 ## Channels vs. fluids
